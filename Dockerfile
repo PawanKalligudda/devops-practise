@@ -15,6 +15,11 @@ COPY script.js /usr/share/nginx/html/
 # Copy custom Nginx configuration (optional)
 COPY nginx.conf /etc/nginx/conf.d/default.conf
 
+# Set correct permissions for all website files
+RUN chmod -R 644 /usr/share/nginx/html && \
+    find /usr/share/nginx/html -type d -exec chmod 755 {} \; && \
+    chown -R nginx:nginx /usr/share/nginx/html
+
 # Expose port 80 to the outside world
 EXPOSE 80
 
