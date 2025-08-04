@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DevOps Learning Journey - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1 class="logo">DevOps Portfolio</h1>
+                <ul class="nav-menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h2>Welcome to My DevOps Learning Journey</h2>
+                <p>From Docker to Kubernetes - Building the Future of Infrastructure</p>
+                <button onclick="scrollToSection('about')" class="cta-button">Learn More</button>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <div class="container">
+                <h2>About This Journey</h2>
+                <p>This website documents my progression through the DevOps landscape, starting with containerization using Docker and Kubernetes, and expanding into CI/CD, Infrastructure as Code, and monitoring.</p>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h3>Phase 1: Foundations</h3>
+                        <p>Linux, Git, Docker, Basic Scripting</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Phase 2: Core Tools</h3>
+                        <p>CI/CD, Kubernetes, IaC, Monitoring</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Phase 3: Advanced</h3>
+                        <p>GitOps, Service Mesh, Security</p>
+                    </div>
+                    <div class="timeline-item">
+                        <h3>Phase 4: Mastery</h3>
+                        <p>Architecture, Leadership, Certification</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills">
+            <div class="container">
+                <h2>Current Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Docker</h3>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="80%"></div>
+                        </div>
+                        <p>Containerization and image management</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Kubernetes</h3>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="60%"></div>
+                        </div>
+                        <p>Container orchestration and deployment</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Git</h3>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="85%"></div>
+                        </div>
+                        <p>Version control and collaboration</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Linux</h3>
+                        <div class="progress-bar">
+                            <div class="progress" data-width="70%"></div>
+                        </div>
+                        <p>System administration and scripting</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <div class="container">
+                <h2>Learning Projects</h2>
+                <div class="project-grid">
+                    <div class="project-card">
+                        <h3>Containerized Static Website</h3>
+                        <p>This very website containerized with Docker and Nginx</p>
+                        <div class="tech-stack">
+                            <span class="tech">Docker</span>
+                            <span class="tech">Nginx</span>
+                            <span class="tech">HTML/CSS/JS</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>CI/CD Pipeline</h3>
+                        <p>Automated build and deployment pipeline (Coming Soon)</p>
+                        <div class="tech-stack">
+                            <span class="tech">GitHub Actions</span>
+                            <span class="tech">Docker Hub</span>
+                            <span class="tech">Kubernetes</span>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <h3>Infrastructure as Code</h3>
+                        <p>Terraform scripts for cloud infrastructure (Planned)</p>
+                        <div class="tech-stack">
+                            <span class="tech">Terraform</span>
+                            <span class="tech">AWS</span>
+                            <span class="tech">Kubernetes</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <div class="container">
+                <h2>Connect With My Journey</h2>
+                <p>Follow along as I progress through the DevOps learning path</p>
+                <div class="contact-info">
+                    <p>📧 devops-learner@example.com</p>
+                    <p>🐙 GitHub: /devops-journey</p>
+                    <p>💼 LinkedIn: /in/devops-learning</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 DevOps Learning Journey. Built with Docker & Kubernetes in mind.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
