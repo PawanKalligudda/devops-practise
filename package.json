@@ -1,0 +1,23 @@
+{
+  "name": "devops-portfolio-website",
+  "version": "1.0.0",
+  "description": "A static website project for DevOps learning journey with Docker containerization",
+  "main": "index.html",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "serve": "python -m http.server 8000",
+    "docker:build": "docker build -t devops-portfolio:latest .",
+    "docker:run": "docker run -d -p 8080:80 --name my-portfolio devops-portfolio:latest",
+    "docker:stop": "docker stop my-portfolio && docker rm my-portfolio"
+  },
+  "keywords": ["devops", "docker", "nginx", "static-website", "learning"],
+  "author": "DevOps Learner",
+  "license": "MIT",
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "@testing-library/jest-dom": "^6.1.4"
+  }
+}
